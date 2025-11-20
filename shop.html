@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fanclub</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://i.redd.it/m21vcu4780y91.jpg">
+
+
+
+</head>
+
+<body>
+
+  <h1 style="margin-top: 15px;" align="center">Мерч</h1>
+  <hr width="align">
+  <br>
+  
+
+  <header class="navigation">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul>
+          <li><a href="index.html" target="_self">Главная</a></li>
+          <li><a href="fanclub.html" target="_self">Записаться в фанклуб</a></li>
+          <li><a href="shop.html" target="_self"><u>Купить мерч</u></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <br>
+
+  <h3 align="center" style="font-size: 30px;">Здесь представлен мерч из наличия:</h3>
+
+  <div class="container mt-4">
+    <div class="row" id="products-container">
+    </div>
+  </div>
+
+
+<div class="container mt-5">
+  <div style="border: 1px solid #537f94; padding: 20px;">
+    <h3>Корзина</h3>
+    <div id="cart-items">
+      <!-- товары корзины -->
+    </div>
+    <div id="cart-total" style="margin-top: 10px; font-size: 18px; font-weight: bold;">
+      <!-- общая сумма -->
+    </div>
+    <button onclick="checkout()" style="margin-top: 10px; width: 180px;">
+  Оформить заказ
+</button>
+    <button onclick="clearCart()" style="margin-top: 10px; width: 180px;">
+      Очистить корзину
+    </button>
+  </div>
+</div>
+
+  <script src="shop.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
